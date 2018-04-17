@@ -227,6 +227,7 @@ address, h1, h2, h3, h4, h5, h6, i, li, span {
 .content {
   overflow: hidden;
 }
+
 #bg-gray {
   background-color: #333;
   display: none;
@@ -346,8 +347,8 @@ address, h1, h2, h3, h4, h5, h6, i, li, span {
   top: 50%;
   display: block;
   content: '';
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-top: none;
   border-right: none;
 }

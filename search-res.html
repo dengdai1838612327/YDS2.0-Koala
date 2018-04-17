@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>搜索结果</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
+</head>
+<body>
+<div class="topfixed">
+  <header class="header search">
+    <div class="search-box">
+      <i class="sprites search-icon"></i>
+      <input type="text">
+      <i class="sprites close-icon"></i>
+    </div>
+  </header>
+</div>
+<div class="content">
+  <div class="filter">
+    <ul>
+      <li>默认</li>
+      <li>价格<div class="drop-box"><em class="drop-up on"></em><em class="drop-down"></em></div></li>
+      <li>销量</li>
+      <li class="on" onclick="return pannel();">筛选<i class="sprites filter-icon"></i></li>
+    </ul>
+  </div>
+  <div class="search-list mt85">
+    <ul>
+      <li>
+        <div class="item-img">
+          <img src="images/1.png" width="125" height="125">
+          <i class="zt-icon miaosha"></i>
+        </div>
+        <div class="item-con">
+          <p class="item-name">笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑</p>
+          <p class="item-tag"><em>美国</em><em>美国</em></p>
+          <span class="price-old">￥10000</span>
+          <span class="price-new">￥9999.99</span>
+          <p class="item-remark">
+            <span class="bought"><em>000000</em>人已购买</span>
+            <span class="time">距离结束还有00:00:00</span>
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="item-img">
+          <img src="images/1.png" width="125" height="125">
+          <i class="zt-icon qianggou"></i>
+        </div>
+        <div class="item-con">
+          <p class="item-name">笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑</p>
+          <p class="item-tag"><em>美国</em></p>
+          <span class="price-old">￥10000</span>
+          <span class="price-new">￥9999.99</span>
+          <p class="item-remark">
+            <span class="bought"><em>10万+</em>人已购买</span>
+            <span class="time">距离结束还有00:00:00</span>
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="item-img">
+          <img src="images/1.png" width="125" height="125">
+          <i class="zt-icon kaishi"></i>
+        </div>
+        <div class="item-con">
+          <p class="item-name">笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑</p>
+          <p class="item-tag"><em>美国</em></p>
+          <span class="price-old">￥10000</span>
+          <span class="price-new">￥9999.99</span>
+          <p class="item-remark">
+            <span class="bought"><em>10万+</em>人已购买</span>
+            <span class="time">距离结束还有00:00:00</span>
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="item-img">
+          <img src="images/1.png" width="125" height="125">
+          <i class="zt-icon jieshu"></i>
+        </div>
+        <div class="item-con">
+          <p class="item-name">笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑</p>
+          <p class="item-tag"><em>美国</em></p>
+          <span class="price-old">￥10000</span>
+          <span class="price-new">￥9999.99</span>
+          <p class="item-remark">
+            <span class="bought"><em>10万+</em>人已购买</span>
+            <span class="time">距离结束还有00:00:00</span>
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="item-img">
+          <img src="images/1.png" width="125" height="125">
+        </div>
+        <div class="item-con">
+          <p class="item-name">笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑</p>
+          <p class="item-tag"><em>美国</em></p>
+          <span class="price-old">￥10000</span>
+          <span class="price-new">￥9999.99</span>
+          <p class="item-remark">
+            <span class="bought"><em>10万+</em>人已购买</span>
+            <span class="time">距离结束还有00:00:00</span>
+          </p>
+        </div>
+      </li>
+      <li>
+        <div class="item-img">
+          <img src="images/1.png" width="125" height="125">
+        </div>
+        <div class="item-con">
+          <p class="item-name">笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑</p>
+          <p class="item-tag"><em>美国</em></p>
+          <span class="price-old">￥10000</span>
+          <span class="price-new">￥9999.99</span>
+          <p class="item-remark">
+            <span class="bought"><em>10万+</em>人已购买</span>
+            <span class="time">距离结束还有00:00:00</span>
+          </p>
+        </div>
+      </li>
+    </ul>
+    <p class="btm-tips">没有更多商品，换个词搜搜吧~</p>
+  </div>
+  <i class="sprites back-top"></i>
+</div>
+<div id="bg-gray"></div>
+<div class="pannel">
+  <div class="filtrate-block">
+    <div class="pannel-root">
+      <div class="index-pannel">
+        <div class="pannel-box">
+          <p class="box-tit">
+            <span class="name">价格</span>
+          </p>
+          <div class="box-con price">
+            <input type="text" placeholder="最低价">
+            <span>——</span>
+            <input type="text" placeholder="最高价">
+          </div>
+        </div>
+        <div class="pannel-box">
+          <p class="box-tit">
+            <span class="name">国家/地区</span>
+            <span class="pull">全部<i class="icon-up"></i></span>
+            <span class="sel"><em>国家</em><em>国家</em><em>国家</em><em>国家</em><em>国家</em><em>国家</em><em>国家</em><em>国家</em><em>国家</em></span>
+          </p>
+          <ul class="box-con">
+            <li>国家国家国家国家国家国家国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+          </ul>
+        </div>
+        <div class="pannel-box">
+          <p class="box-tit">
+            <span class="name">国家/地区</span>
+            <span class="pull">全部<i class="icon-up"></i></span>
+            <span class="sel"><em>国家</em><em>国家</em><em>国家</em><em>国家</em><em>国家</em><em>国家</em><em>国家</em><em>国家</em><em>国家</em></span>
+          </p>
+          <ul class="box-con">
+            <li>国家国家国家国家国家国家国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+          </ul>
+        </div>
+        <div class="pannel-box">
+          <p class="box-tit">
+            <span class="name">品牌名称</span>
+            <span class="pull">全部<i class="icon-up"></i></span>
+            <span class="sel"><em>国家</em><em>国家</em><em>国家</em><em>国家</em><em>国家</em><em>国家</em><em>国家</em><em>国家</em><em>国家</em></span>
+          </p>
+          <ul class="box-con">
+            <li class="cur">国家国家国家国家国家国家国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+            <li>国家</li>
+          </ul>
+        </div>
+        <div class="pannel-box">
+          <p class="box-tit" onclick="return pannel_next();">
+            <span class="name">全部</span>
+            <span class="pull"><i class="icon-right"></i></span>
+          </p>
+        </div>
+        <div class="pannel-btn">
+          <a href="###" class="reset">重置</a>
+          <a href="###" class="sure">确定</a>
+        </div>
+      </div>
+      <div class="next-pannel">2</div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function pannel(){
+  var bggray = $("#bg-gray");
+  var pannel = $(".pannel");
+  bggray.css("width",window.screen.width);
+  bggray.css("height",window.screen.height);
+  bggray.show();
+  pannel.css("left","10%");
+};
+function pannel_next(){
+  $(".pannel-root").css("transform","translateX(-50%)");
+};
+</script>
+</body>
+</html>
