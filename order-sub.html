@@ -2,7 +2,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>购物车</title>
+<title>确认支付</title>
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/layout.css">
 <meta content="yes" name="apple-mobile-web-app-capable" />
@@ -13,9 +13,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
 </head>
 <body>
-<div class="content" style="padding:0 0 105px;">
-  <div class="cart-list">
-    <div class="goods-detail"> <i class="sprites check"></i>
+<div class="content order-sub">
+  <div class="order-box">
+    <i class="renzheng-tag gray">下单失败</i>
+    <p class="order-tit">订单号：546988615654984651451</p>
+    <div class="order-con">
       <div class="detail-box">
         <div class="goods-img"><img src="images/1.png" width="109" height="109"></div>
         <div class="goods-con">
@@ -24,35 +26,12 @@
             <p>配置：i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G </p>
             <p>配置：i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G </p>
           </div>
-          <div class="goods-price"> <span class="price">￥9999.00</span>
-            <div class="num"> <span class="jian"></span>
-              <input type="text" class="num" value="99">
-              <span class="jia"></span> </div>
+          <div class="goods-price">
+            <span class="price">￥9999.00<em>×2</em></span>
+            <span class="tax">税费：￥225.00</span>
           </div>
         </div>
       </div>
-    </div>
-    <div class="goods-detail"> <i class="sprites check checked"></i>
-      <div class="detail-box">
-        <div class="goods-img"><img src="images/1.png"></div>
-        <div class="goods-con">
-          <p class="goods-name">笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑</p>
-          <div class="goods-desc">
-            <p>配置：i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G </p>
-            <p>配置：i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G </p>
-          </div>
-          <div class="goods-price"> <span class="price">￥9999.00</span>
-            <div class="num"> <span class="jian"></span>
-              <input type="text" class="num" value="99">
-              <span class="jia"></span> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="cart-list wuxiao">
-    <div class="wuxiao-tit"> <span>无效商品（99）</span> <a href="###">清空无效商品</a> </div>
-    <div class="goods-detail"> <i class="wuxiao-tag">无效</i>
       <div class="detail-box">
         <div class="goods-img"><img src="images/1.png" width="109" height="109"></div>
         <div class="goods-con">
@@ -61,35 +40,79 @@
             <p>配置：i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G </p>
             <p>配置：i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G </p>
           </div>
-          <div class="goods-price"> <span class="price">￥9999.00</span> </div>
+          <div class="goods-price">
+            <span class="price">￥9999.00<em>×2</em></span>
+            <span class="tax">税费：￥225.00</span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="goods-detail"> <i class="wuxiao-tag">下架</i>
+    <div class="fail-reason">
+      <p class="reason">
+        <label>订单失败原因：</label>
+        <span>无库存</span>
+      </p>
+      <p class="reason-tips">提示：订单失败将视为无效，该订单金额无需支付</p>
+    </div>
+  </div>
+  <div class="order-box">
+    <i class="renzheng-tag green">下单成功</i>
+    <p class="order-tit">订单号：546988615654984651451</p>
+    <div class="order-con">
       <div class="detail-box">
-        <div class="goods-img"><img src="images/1.png"></div>
+        <div class="goods-img"><img src="images/1.png" width="109" height="109"></div>
         <div class="goods-con">
           <p class="goods-name">笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑</p>
           <div class="goods-desc">
             <p>配置：i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G </p>
             <p>配置：i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G </p>
           </div>
-          <div class="goods-price"> <span class="price">￥9999.00</span> </div>
+          <div class="goods-price">
+            <span class="price">￥9999.00<em>×2</em></span>
+            <span class="tax">税费：￥225.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="detail-box">
+        <div class="goods-img"><img src="images/1.png" width="109" height="109"></div>
+        <div class="goods-con">
+          <p class="goods-name">笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑笔记本电脑</p>
+          <div class="goods-desc">
+            <p>配置：i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G </p>
+            <p>配置：i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G i5-7300HQ 8G 1T+128G </p>
+          </div>
+          <div class="goods-price">
+            <span class="price">￥9999.00<em>×2</em></span>
+            <span class="tax">税费：￥225.00</span>
+          </div>
         </div>
       </div>
     </div>
+    <div class="order-box-btm">
+      <p>
+        <label>运费:</label>
+        <span>￥8.00</span>
+      </p>
+      <p>
+        <label>税费:</label>
+        <span>￥25.00</span>
+      </p>
+      <p>
+        <label>小计:</label>
+        <span>￥511.00</span>
+      </p>
+      <p class="yhq">
+        <label>优惠券:</label>
+        <em class="yhq-text">因订单金额发生变化，原优惠券失效，请重新选择</em>
+        <i class="icon-right"></i>
+      </p>
+    </div>
   </div>
-  <div class="cart-btm">
-    <div class="all-check"> <i class="sprites check"></i> <span>全选</span> </div>
-    <div class="btn">
-      <input type="button" class="del" value="删除">
-      <input type="button" class="checkout" value="结算">
-    </div>
-    <div class="price">
-      <p class="price-num">合计:<em>￥99999.00</em></p>
-      <p class="f12">不含运费</p>
-    </div>
+  <div class="order-btm">
+    <p class="order-sum"><span>总计：</span><em>￥9999.00</em></p>
+    <a class="a-tj">确认支付</a>
   </div>
 </div>
+
 </body>
 </html>
