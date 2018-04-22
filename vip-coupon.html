@@ -2,7 +2,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>选择优惠券</title>
+<title>优惠券</title>
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/layout.css">
 <meta content="yes" name="apple-mobile-web-app-capable" />
@@ -13,38 +13,65 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
 </head>
 <body>
-<div class="content">
-  <ul class="coupon-list">
-    <li>
-      <div class="coupon-l"> <i class="icon-lt"></i>
-        <div class="coupon-con"> <span class="coupon-num">￥<em>30</em></span>
-          <div class="con-r">
-            <p class="name">满3000元减300元</p>
-            <p class="time">有效期：2018-02-02至2018-02-02</p>
-            <em class="area">全场通用</em> </div>
-        </div>
-      </div>
-      <div class="coupon-right">
-        <p><a href="###">立即<br />
-          使用</a></p>
-      </div>
-    </li>
-    <li>
-      <div class="coupon-l"> <i class="icon-lt"></i>
-        <div class="coupon-con"> <span class="coupon-num">￥<em>30</em></span>
-          <div class="con-r">
-            <p class="name">满3000元减300元</p>
-            <p class="time">有效期：2018-02-02至2018-02-02</p>
-            <em class="area">全场通用</em> </div>
-        </div>
-      </div>
-      <div class="coupon-right">
-        <p><a href="###">立即<br />
-          使用</a></p>
-      </div>
-    </li>
-
+<div class="coupon-status">
+  <ul>
+    <li class="cur"><span>全部</span></li>
+    <li><span>待付款</span></li>
+    <li><span>待收货</span></li>
+    <li><span>待评价</span></li>
   </ul>
 </div>
+<div class="content" style="padding-top:45px;">
+  <ul class="coupon-list">
+    
+    <li>
+      <div class="coupon-l"> <i class="icon-lt"></i>
+        <div class="coupon-con"> <span class="coupon-num">￥<em>30</em></span>
+          <div class="con-r">
+            <p class="name">满3000元减300元</p>
+            <p class="time">有效期：2018-02-02至2018-02-02</p>
+            <em class="area">全场通用</em> </div>
+        </div>
+      </div>
+      <div class="coupon-right wsx"> <span class="s_img"><img src="images/wsx.png"></span> </div>
+    </li>
+    <li>
+      <div class="coupon-l"> <i class="icon-lt"></i>
+        <div class="coupon-con"> <span class="coupon-num">￥<em>30</em></span>
+          <div class="con-r">
+            <p class="name">满3000元减300元</p>
+            <p class="time">有效期：2018-02-02至2018-02-02</p>
+            <em class="area">全场通用</em> </div>
+        </div>
+      </div>
+      <div class="coupon-right"> <p style="background:none;"><a href="">可<br />使<br />用</a></p></div>
+    </li>
+    <li class="used">
+      <div class="coupon-l"> <i class="icon-lt"></i>
+        <div class="coupon-con"> <span class="coupon-num">￥<em>30</em></span>
+          <div class="con-r">
+            <p class="name">满3000元减300元</p>
+            <p class="time">有效期：2018-02-02至2018-02-02</p>
+            <em class="area">全场通用</em> </div>
+        </div>
+      </div>
+      <div class="coupon-right "><i></i></div>
+     
+    </li>
+     <li class="used" id="gray">
+      <div class="coupon-l"> <i class="icon-lt"></i>
+        <div class="coupon-con"> <span class="coupon-num">￥<em>30</em></span>
+          <div class="con-r">
+            <p class="name">满3000元减300元</p>
+            <p class="time">有效期：2018-02-02至2018-02-02</p>
+            <em class="area">全场通用</em> </div>
+        </div>
+      </div>
+      <div class="coupon-right "><i class="ygq"></i></div>
+     
+    </li>
+  </ul>
+</div>
+
 </body>
 </html>

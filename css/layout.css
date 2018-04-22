@@ -40,6 +40,7 @@
 	font-size: 14px;
 	color: #666;
 	overflow: hidden;
+	position: relative;
 }
 .notice .sprites {
 	float: left;
@@ -48,11 +49,17 @@
 	margin: 6px 10px 0 0;
 	background-position: right -17px;
 }
-
+.t-news em img {
+	float: left;
+	vertical-align: middle;
+}
 a.more {
-	float: right;
-	line-height: 30px;
 	color: #999;
+	font-size: 12px;
+	line-height: 30px;
+	position: absolute;
+	right: 10px;
+	top: 0;
 }
 .t-news {
 	height: 30px;
@@ -314,7 +321,7 @@ i.check.checked {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
-.goods-con .goods-price {
+.goods-price {
 	overflow: hidden;
 }
 .goods-price .price {
@@ -1056,6 +1063,7 @@ i.check.checked {
 .order-box {
 	background-color: #fff;
 	margin-bottom: 5px;
+	position: relative;
 }
 .order-box .order-tit {
 	padding-left: 15px;
@@ -1082,6 +1090,10 @@ i.check.checked {
 	font-size: 14px;
 	line-height: 26px;
 }
+.order-box-btm {
+	background: #fff;
+	margin-bottom: 10px;
+}
 .order-box-btm p {
 	border-bottom: 1px solid #ddd;
 	padding: 0 15px;
@@ -1096,6 +1108,9 @@ i.check.checked {
 }
 .order-box-btm p span {
 	float: right;
+}
+.order-box-btm p span.red {
+	color: #f00;
 }
 .order-box-btm .yhq .yhq-tag {
 	border: 1px solid #f00;
@@ -1344,6 +1359,9 @@ i.check.checked {
 }
 .renzheng-tag.blue {
 	background-color: #34bdff;
+}
+.renzheng-tag.yellow {
+	background-color: #F39800;
 }
 .shenfen-info {
 	margin: 10px 0;
@@ -1661,21 +1679,68 @@ i.check.checked {
 .btn-box.mt85 {
 	margin-top: 85px;
 }
-
 .add_list .act {
-    background-color: #ff3b2f;
-    bottom: 0;
-    color: #333;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 70px;
-    z-index: 1;
+	background-color: #ff3b2f;
+	bottom: 0;
+	color: #333;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 70px;
+	z-index: 1;
+}
+/*选择收货地址*/
+.gl_address_list {
+	border-bottom: 1px solid #dbdbdb;
+	margin-bottom: 0;
+	position: relative;
+}
+.gl_address_list.cur {
+	background-image: url(../images/selected.png);
+	background-size: 22px 15px;
+	background-repeat: no-repeat;
+	background-position: 20px 30px;
+}
+.gl_address_list .add_list {
+	padding-right: 40px;
+}
+.gl_address_list.cur .add_list {
+	padding-left: 40px;
+}
+.gl_address_list .act {
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	margin-top: -17px;
+	border-left: 1px solid #dbdbdb;
+}
+.gl_address_list .act i {
+	display: block;
+	margin: 10px;
+	width: 14px;
+	height: 14px;
+	background-position: -25px bottom;
+}
+.gl_address_list.cur .mt_new {
+	color: #f00;
+}
+.mt_new span {
+	margin-right: 15px;
+}
+.mc em {
+	color: #fff;
+	background-color: #f00;
+	padding: 0 3px;
+	border-radius: 3px;
+	margin-right: 5px;
+}
+.mc p {
+	display: inline;
+	word-break: break-all;
 }
 /*公告*/
 .notice-tit i {
-	background-position: right -80px;
 	height: 13px;
 	margin: 0 5px 0 0;
 	vertical-align: -1px;
@@ -1753,50 +1818,47 @@ i.check.checked {
 	width: 18px;
 }
 /*确认支付*/
-.order-sub .order-box{
-	position: relative;
-}
-.renzheng-tag.green{
+
+.renzheng-tag.green {
 	background-color: #22ac38;
 }
-.fail-reason{
+.fail-reason {
 	background-color: #eee;
 	padding: 10px 20px;
 }
-.fail-reason .reason{
+.fail-reason .reason {
 	font-size: 14px;
 	color: #666;
 	line-height: 30px;
 	overflow: hidden;
 }
-.fail-reason .reason label{
+.fail-reason .reason label {
 	float: left;
 }
-.fail-reason .reason span{
+.fail-reason .reason span {
 	float: right;
 }
-.fail-reason .reason-tips{
+.fail-reason .reason-tips {
 	color: #999;
 }
 /*选择优惠券*/
-.coupon-list{
+.coupon-list {
 	margin: 10px 0;
 }
-.coupon-list li{
+.coupon-list li {
 	margin-bottom: 10px;
 	overflow: hidden;
+	padding-left: 2px;
 }
-.coupon-list li .coupon-l{
-	float: left;
+.coupon-list li .coupon-l {
 	background-color: #4f0dc6;
 	color: #fff;
-	width: 88%;
+	float: left;
 	height: 85px;
-	border-right: 2px dashed #fff;
 	position: relative;
-	padding-left: 40px;
+	width: 83%;
 }
-.coupon-l .icon-lt{
+.coupon-l .icon-lt {
 	width: 40px;
 	height: 40px;
 	position: absolute;
@@ -1805,66 +1867,178 @@ i.check.checked {
 	border: 20px solid;
 	border-color: #3e0a9e transparent transparent #3e0a9e;
 }
-.coupon-list li .coupon-r{
-	float: right;
-	width: 12%;
-	height: 85px;
-	border-left: 2px dashed #fff;
-	background-color: #fd8;
-	color: #915a00;
-	font-size: 14px;
+.coupon-num {
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	left: 10px;
+	position: absolute;
 }
-/*选择收货地址*/
-.gl_address_list{
-	border-bottom: 1px solid #dbdbdb;
-	margin-bottom: 0;
+.coupon-num > em {
+	font-size: 52px;
+}
+.con-r {
+	margin-left: 100px;
+	width: 66%;
+}
+.name {
+	border-bottom: 1px dashed #fff;
+	font-size: 14px;
+	padding: 5px 0 2px;
+}
+.area {
+	background: #fff none repeat scroll 0 0;
+	color: #3e0a9e;
+	display: block;
+	margin-top: 5px;
+	text-align: center;
+	width: 70px;
+}
+.coupon-list li.used .area {
+	color: #71483B;
+}
+.coupon-list li .coupon-r {
+	background-color: #fd8;
+	border-left: 2px dashed #fff;
+	color: #915a00;
+	float: right;
+	font-size: 14px;
+	height: 85px;
+	width: 12%;
+}
+.coupon-right {
+	background: url(../images/yhq1.png) no-repeat scroll 0 0 / 60px 85px;
+	float: left;
+	font-weight: bold;
+	height: 85px;
+	padding-top: 14px;
+	text-align: center;
+	width: 60px;
 	position: relative;
 }
-.gl_address_list.cur{
-	background-image: url(../images/selected.png);
-	background-size: 22px 15px;
-	background-repeat: no-repeat;
-	background-position: 20px 30px;
+.coupon-right.wsx {
+	background: url(../images/yhq2.png) no-repeat scroll 0 0 / 60px 85px;
+	float: left;
+	font-weight: bold;
+	height: 85px;
+	padding-top: 14px;
+	text-align: center;
+	width: 60px;
 }
-.gl_address_list .add_list{
-	padding-right: 40px;
+.used .coupon-right {
+	background: url(../images/yhq3.png) no-repeat scroll 0 0 / 60px 85px;
+	float: left;
+	font-weight: bold;
+	height: 85px;
+	padding-top: 14px;
+	text-align: center;
+	width: 60px;
 }
-.gl_address_list.cur .add_list{
-	padding-left: 40px;
+.coupon-right p {
+	background: url(../images/r-b.png) center bottom no-repeat;
+	background-size: 11px 6px;
+	padding-bottom: 12px;
 }
-.gl_address_list .act{
-	position: absolute;
-	right: 5px;
-	top: 50%;
-	margin-top: -17px;
-	border-left: 1px solid #dbdbdb;
+.coupon-right p a {
+	color: #915A00;
 }
-.gl_address_list .act i{
+.coupon-right .s_img {
+	text-align: center;
+}
+.wsx .s_img img {
+	display: inline-block;
+	height: 46px;
+	margin: 5px 0 0 5px;
+	width: 46px;
+}
+/*我的-优惠券*/
+.coupon-status {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	background-color: #fff;
+}
+.coupon-status ul {
+	overflow: hidden;
+}
+.coupon-status ul li {
+	float: left;
+	width: 25%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+	color: #333;
+}
+.coupon-status ul li span {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
 	display: block;
-	margin: 10px;
-	width: 14px;
-	height: 14px;
-	background-position: -25px bottom;
+	height: 40px;
+	margin: 0 0.5px;
 }
-.gl_address_list.cur .mt_new{
-	color: #f00;
+.coupon-status ul li.cur span {
+	color: #E60012;
 }
-.mt_new span{
-	margin-right: 15px;
+.coupon-list.mt40 {
+	margin-top: 40px;
 }
-.mc em{
+.order-status ul li {
+	float: left;
+	width: 33%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+	color: #333;
+}
+.order-status ul li.cur span {
+	color: #E60012;
+	border-bottom: 1px solid #E60012;
+}
+.coupon-list li.used .coupon-l {
+	background-color: #71483B;
 	color: #fff;
-	background-color: #f00;
-	padding: 0 3px;
-	border-radius: 3px;
-	margin-right: 5px;
+	float: left;
+	height: 85px;
+	position: relative;
+	width: 83%;
 }
-.mc p{
-	display: inline;
-	word-break: break-all;
+.coupon-list li.used .coupon-l .icon-lt {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 20px solid;
+	border-color: #472C24 transparent transparent #472C24;
+}
+.coupon-right i {
+	position: absolute;
+	width: 74px;
+	height: 46px;
+	right: 20px;
+	top: 20px;
+	z-index: 1;
+	background: url(../images/ysy.png) 0 0 no-repeat;
+	background-size: 74px 46px;
+}
+.coupon-right i.ygq {
+	background: url(../images/ygq.png) 0 0 no-repeat;
+	background-size: 74px 46px;
+}
+#gray {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+	-webkit-filter: grayscale(1)
 }
 /*个人中心*/
-.c-banner-t{
+.c-banner-t {
 	background: url(../images/c-banner-t.png) 0 0 no-repeat;
 	background-size: cover;
 	color: #fff;
@@ -1872,45 +2046,122 @@ i.check.checked {
 	margin-bottom: 10px;
 	overflow: hidden;
 }
-.c-banner-t img{
+.c-banner-t img {
 	display: block;
 	margin: 15px auto 10px;
 }
-.c-banner-t span{
+.c-banner-t span {
 	display: block;
 	text-align: center;
 	font-size: 14px;
 }
-.center-box{
+.center-box {
 	background-color: #fff;
 	margin-bottom: 10px;
 }
-.center-box .box-head{
+.center-box .box-head {
 	padding: 10px 20px;
 	font-size: 15px;
 	font-weight: bolder;
 	border-bottom: 1px solid #dbdbdb;
 }
-.center-box .box-list{
+.center-box .box-list {
 	margin: 0 20px;
 	padding: 15px 0;
 	overflow: hidden;
 }
-.center-box .box-list li{
+.center-box .box-list li {
 	float: left;
 	width: 25%;
 	text-align: center;
 }
-.center-box .box-list li img{
+.center-box .box-list li img {
 	display: block;
 	margin: 0 auto 10px;
 }
-.center-box .box-list li span{
+.center-box .box-list li span {
 	display: block;
 	font-size: 14px;
 	color: #666;
 }
-.c-banner-b img{
+.c-banner-b img {
 	display: block;
 	width: 100%;
+}
+/*订单详情*/
+
+.order-price {
+	background: #fff none repeat scroll 0 0;
+	border-bottom: 1px solid #ddd;
+	padding: 10px;
+}
+.order-price p {
+	font-size: 15px;
+}
+.order-price p span {
+	margin-left: 10px;
+}
+.order-price p em {
+	color: #000;
+}
+.order-price .fl {
+	float: left;
+}
+.order-price .fr {
+	float: right;
+}
+.btns {
+	padding-top: 10px;
+	border-top: 1px solid #ddd;
+	margin-top: 10px;
+}
+.order-price .btns a {
+	float: right;
+	margin-left: 10px;
+	width: 22%;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	text-align: center;
+	display: block;
+	border-radius: 3px;
+	font-size: 13px;
+}
+.order-price .btns a.a_pay {
+	border: 1px solid #FF0000;
+	background: #FF0000;
+	color: #fff;
+}
+.i_end {
+	width: 44px;
+	height: 44px;
+	background: url(../images/end.png) 0 0 no-repeat;
+	background-size: 44px 44px;
+	position: absolute;
+	right: 10px;
+	top: 2px;
+	z-index: 1;
+}
+.order-btns {
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+	margin-bottom:20px;
+}
+.order-btns a {
+	background: #fff;
+	font-size: 15px;
+	margin-right: 10px;
+	float: right;
+	width: 28%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	display: block;
+	border: 1px solid #fff;
+}
+.order-btns a.go_pay {
+	border: 1px solid #FF0000;
+	background: #FF0000;
+	color: #fff;
 }
