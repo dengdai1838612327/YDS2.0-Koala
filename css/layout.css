@@ -854,13 +854,18 @@ i.check.checked {
 	width: 50%;
 	height: 100%;
 	float: left;
-	overflow: hidden;
+	overflow-y: scroll;
+	padding-bottom: 45px;
 }
 .next-pannel {
 	width: 50%;
 	height: 100%;
 	float: left;
-	overflow: hidden;
+	background-color: #fff;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: relative;
+	padding-bottom: 45px;
 }
 .pannel-box {
 	background-color: #fff;
@@ -878,6 +883,8 @@ i.check.checked {
 	float: left;
 	font-size: 15px;
 	color: #666;
+	padding: 0;
+	border: none;
 }
 .pannel-box .box-tit .sel {
 	float: right;
@@ -941,41 +948,86 @@ i.check.checked {
 .pannel-box .box-con li.cur {
 	border-color: #aaa;
 }
+.brand-head.header{
+	background-color: #fff;
+	font-size: 16px;
+	color: #666;
+	border-bottom: 1px solid #dbdbdb;
+	position: fixed;
+	width: 50%;
+	top: 0;
+}
+.brand-head.header .a-back:before{
+	border: #999 solid 2px;
+	border-top: none;
+  border-right: none;
+}
+.brand-list{
+	margin-top: 45px;
+}
+.brand-list dl dt{
+	height: 35px;
+	line-height: 35px;
+	background-color: #eee;
+	font-size: 14px;
+	padding-left: 10px;
+}
+.brand-list dl dd{
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 1px solid #dbdbdb;
+	padding-left: 10px;
+	font-size: 14px;
+}
+.brand-list dl dd:last-child{
+	border-bottom: none;
+}
+.brand-list dl dd a{
+	color: #737373;
+	float: left;
+}
+.brand-list dl dd.on a{
+	color: #f00;
+}
+.brand-list dl dd.on .selected{
+	background: url(../images/selected2.png) 0 0 no-repeat;
+	background-size: 10px 8px;
+	float: left;
+	width: 10px;
+	height: 8px;
+	margin: 10px;
+}
+.brand-abc {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding-top: 45px;
+  text-align: center;
+  width: 5%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999
+}
+.brand-abc a {
+  color: #666;
+  display: block;
+  font-size: 12px;
+  margin-bottom: 3px;
+  height: 15px
+}
 .pannel-btn {
 	height: 45px;
-	width: 100%;
-	display: box;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-box;
-	display: -o-box;
+	width: 90%;
+	position: fixed;
+	bottom: 0;
 }
 .pannel-btn a {
+	float: left;
 	width: 50%;
 	text-align: center;
 	font-size: 16px;
 	height: 45px;
 	line-height: 45px;
-	display: box;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-box;
-	display: -o-box;
-	box-flex: 1;
-	-webkit-box-flex: 1;
-	-moz-box-flex: 1;
-	-ms-box-flex: 1;
-	-o-box-flex: 1;
-	box-align: center;
-	-webkit-box-align: center;
-	-moz-box-align: center;
-	-ms-box-align: center;
-	-o-box-align: center;
-	box-pack: center;
-	-webkit-box-pack: center;
-	-moz-box-pack: center;
-	-ms-box-pack: center;
-	-o-box-pack: center;
 }
 .pannel-btn a.reset {
 	background-color: #c9c9c9;
